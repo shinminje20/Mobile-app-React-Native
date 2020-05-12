@@ -1,0 +1,57 @@
+{
+  "name": "roomon",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-native-community/google-signin": "^4.0.0",
+    "@react-native-community/masked-view": "^0.1.7",
+    "@react-native-firebase/app": "^6.7.1",
+    "@react-native-firebase/auth": "^6.7.1",
+    "@react-native-firebase/firestore": "^6.7.1",
+    "@react-native-firebase/messaging": "^6.7.1",
+    "@react-native-firebase/storage": "^6.7.1",
+    "@react-native-mapbox-gl/maps": "^8.1.0-beta.1",
+    "@react-native-seoul/kakao-login": "^2.4.3",
+    "@react-navigation/native": "^5.1.4",
+    "@react-navigation/stack": "^5.2.9",
+    "@rematch/core": "^1.4.0",
+    "axios": "^0.19.2",
+    "email-validator": "^2.0.4",
+    "react": "16.11.0",
+    "react-map-gl-geocoder": "^2.0.11",
+    "react-native": "0.62.1",
+    "react-native-fbsdk": "^1.1.2",
+    "react-native-geocoding": "^0.4.0",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-google-autocomplete": "^0.1.9",
+    "react-native-google-places-autocomplete": "^1.4.2",
+    "react-native-keyboard-aware-scroll-view": "^0.9.1",
+    "react-native-password-strength-meter": "^0.0.3",
+    "react-native-responsive-fontsize": "^0.4.3",
+    "react-native-safe-area-context": "^0.7.3",
+    "react-native-screens": "^2.4.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "@react-native-community/eslint-config": "^1.0.0",
+    "babel-jest": "^25.2.6",
+    "eslint": "^6.8.0",
+    "jest": "^25.2.7",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.11.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

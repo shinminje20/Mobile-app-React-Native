@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1037981422391",
+    "firebase_url": "https://roommon-v2.firebaseio.com",
+    "project_id": "roommon-v2",
+    "storage_bucket": "roommon-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037981422391:android:573b69226347328dd0c0b2",
+        "android_client_info": {
+          "package_name": "com.mjproj.roomon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037981422391-s170biidlalc8ds20n85c2g48ebmo24u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPHxjVKpYZHqpYbr1Z6QR9kf3kDMDvHBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037981422391-s170biidlalc8ds20n85c2g48ebmo24u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1037981422391-eq2ci1suavgki8rjtu0tpbdei08006gc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mjproj.roomon"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
