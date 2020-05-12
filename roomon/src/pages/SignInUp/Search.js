@@ -111,7 +111,7 @@ export default Search = React.memo(function Search(props){
             <View style={{...styles.searchBar, flex:1, marginTop:20}}>
 
 				{/* <View style={{flex:1, backgroundColor: 'red', alignItems: 'center', justifyContent: 'center'}}> */}
-				<GoogleAutoComplete apiKey="AIzaSyAg0EwlWVBE_mr_NfqAlwjzb25I6XjAt6g" debounce={300} minLength={3} queryTypes={'geocode'}>
+				<GoogleAutoComplete apiKey=" debounce={300} minLength={3} queryTypes={'geocode'}>
 
 						{({handleTextChange, locationResults}) => (
 							<React.Fragment>
