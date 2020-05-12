@@ -15,10 +15,10 @@ import LocationItem from '../../components/LocationItem';
 
 // import Geocoder from "react-map-gl-geocoder";
 
-MapboxGL.setAccessToken("pk.eyJ1Ijoic2hpbm1pbmplIiwiYSI6ImNrOXp2NjdreDBqZzIzb292Z2JxdnhzMW0ifQ.75jKzFuA49cCcAsQmB_oew");
+
 // MapboxGL.setConnected(true);
 MapboxGL.setTelemetryEnabled(false)
-Geocoder.init("AIzaSyA101z7992UKtOUzVK-TtoGZuNvXzN6U3Q");
+
 
 const assestsPath = "../../../assets/afterSignUp/";
 
@@ -73,7 +73,7 @@ export default Search = React.memo(function Search(props){
 	// 		console.log(location);
 	// 	})
 	// 	.catch(error => console.warn(error));
-		
+
 	// 	console.log('===========================>>>>>>'.data);
 	// }
 
@@ -109,17 +109,17 @@ export default Search = React.memo(function Search(props){
     const searchBar = () =>{
         return (
             <View style={{...styles.searchBar, flex:1, marginTop:20}}>
-            	
+
 				{/* <View style={{flex:1, backgroundColor: 'red', alignItems: 'center', justifyContent: 'center'}}> */}
 				<GoogleAutoComplete apiKey="AIzaSyAg0EwlWVBE_mr_NfqAlwjzb25I6XjAt6g" debounce={300} minLength={3} queryTypes={'geocode'}>
-						
+
 						{({handleTextChange, locationResults}) => (
 							<React.Fragment>
 								{console.log(locationResults)}
 								<View>
 									{handleSearchBarIcon()}
-									<TextInput 
-										placeholder={"Search"} 
+									<TextInput
+										placeholder={"Search"}
 										style={{...styles.searchBar2, paddingLeft:45}}
 										// value={search}
 										onChangeText={handleTextChange}
@@ -130,7 +130,7 @@ export default Search = React.memo(function Search(props){
 									<ScrollView>
 										{locationResults.map(elem => (
 											// loadData.concat({"description": elem.description})
-											<LocationItem 
+											<LocationItem
 											{...elem}
 											key={elem.id}
 											/>
@@ -138,12 +138,12 @@ export default Search = React.memo(function Search(props){
 									</ScrollView>
 								</View>
 								{/* {searchMenu(locationResults)} */}
-								
+
 							</React.Fragment>
-						
-						
+
+
 						)}
-							
+
 				</GoogleAutoComplete>
 		{/* </View> */}
 				</View>
@@ -159,16 +159,16 @@ export default Search = React.memo(function Search(props){
 				// console.log("==============================")
                        return searchMenuItem(data["description"])
 			});
-			
+
             return(
                 <View style={{...styles.searchMenu}}>
                     {handleViewOnMap()}
                     <KeyboardAwareScrollView style={{height:"100%", overflow:"scroll"}}>
                         {matches}
                     </KeyboardAwareScrollView>
-                        
+
                 </View>
-            ); 
+            );
         }
         return null;
     }
@@ -185,9 +185,9 @@ export default Search = React.memo(function Search(props){
     }
 
     return (
-        <DefaultContainer 
+        <DefaultContainer
         setCurrentPage={()=>props.navigation.navigate("AfterSignUp")}
-        NavBarMiddleCustomText={props.pageType} 
+        NavBarMiddleCustomText={props.pageType}
         NavBarMiddleContent={"custom"}
 		showSkip={false}
 		// paddingLeft={0}
@@ -490,4 +490,3 @@ const DUMMY_DATA = [
 	{"City": "Pievepelago"},
 	{"City": "Shigar"}
 ];
-
